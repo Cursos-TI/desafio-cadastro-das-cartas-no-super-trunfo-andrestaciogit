@@ -7,12 +7,12 @@ int main() {
     int populacao1, populacao2;     
     float area1, area2;     
     float pib1, pib2;     
-    int npt1, npt2;      
-
+    int npt1, npt2;
+    
     printf("*** Dados da Carta 1: ***\n");      
 
     printf("Digite seu estado:\n");     
-    getchar();  // Consumir o '\n' que está no buffer 
+    getchar();
     scanf("%c", &estado1);      
 
     printf("Digite o código da carta:\n");     
@@ -31,8 +31,8 @@ int main() {
     scanf("%f", &pib1);      
 
     printf("Digite o número de pontos turísticos:\n");     
-    scanf("%d", &npt1);      
-
+    scanf("%d", &npt1);
+    
     printf("CARTA 1\n");     
     printf("Estado_1: %c\n", estado1);     
     printf("Código_1: %s\n", carta1);     
@@ -40,12 +40,13 @@ int main() {
     printf("População_1: %d\n", populacao1);     
     printf("Área_1: %.2f km²\n", area1);     
     printf("PIB_1: %.2f bilhões de reais\n", pib1);     
-    printf("Número de Pontos Turísticos_1: %d\n", npt1);      
+    printf("Número de Pontos Turísticos_1: %d\n", npt1); 
+    printf("Densidade Populacional da Carta 1: %.2f habitantes por km²\n", populacao1 / area1);     
 
     printf("*** Dados da Carta 2: ***\n");      
 
     printf("Digite seu estado:\n");     
-    getchar();  // Consumir o '\n' novamente  
+    getchar();
     scanf("%c", &estado2);      
 
     printf("Digite o código da carta:\n");     
@@ -73,7 +74,8 @@ int main() {
     printf("População_2: %d\n", populacao2);     
     printf("Área_2: %.2f km²\n", area2);     
     printf("PIB_2: %.2f bilhões de reais\n", pib2);     
-    printf("Número de Pontos Turísticos_2: %d\n", npt2);         
-
+    printf("Número de Pontos Turísticos_2: %d\n", npt2);  
+    printf("Densidade Populacional da Carta 2: %.2f habitantes por km²\n", populacao2 / area2);
+    
     return 0; 
 }
