@@ -96,6 +96,15 @@ int main() {
     printf("Densidade Populacional: Carta 1 venceu? %d\n", densidade1 > densidade2);
     printf("PIB per Capta: Carta 1 venceu? %d\n", pibpc1 > pibpc2);
     printf("Super Poder: Carta 1 venceu? %d\n", superpoder1 > superpoder2);
+
+    printf("Comparação das Cartas (Atributo: PIB)\n");
+    printf("Carta 1 - Goiânia (GO): %.2f\n", pib1);
+    printf("Carta 2 - Palmas (TO): %.2f\n", pib2);
+    if (pib1 > pib2){
+        printf("Carta 1 (Goiania) venceu!\n");
+    }else{
+        printf("Carta 2 (Palmas) venceu!\n");
+    }
     
     return 0; 
 }
