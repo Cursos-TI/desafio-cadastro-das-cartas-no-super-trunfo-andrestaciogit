@@ -132,8 +132,10 @@ int main() {
     printf("Carta 2 - Palmas (TO): %.2f\n", pib2);
     if (pib1 > pib2){
         printf("Carta 1 (Goiania) venceu!\n");
-    }else{
+    }else if (pib1 < pib2){
         printf("Carta 2 (Palmas) venceu!\n");
+    } else {
+        printf("Houve um empate!\n");
     }
 
     return 0; 
